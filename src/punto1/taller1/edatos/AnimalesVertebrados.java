@@ -5,13 +5,15 @@ public abstract class AnimalesVertebrados {
     protected String color;
     protected int numeroDePatas;
     
-    public AnimalesVertebrados (){}
+    public AnimalesVertebrados (){} // constructor vacio
     
-    public AnimalesVertebrados (String color, int numeroDePatas){
+    public AnimalesVertebrados (String color, int numeroDePatas){  // constructor cargado
         this.color = color;
         this.numeroDePatas = numeroDePatas;      
     }
-
+    
+    /* getters y setters */
+    
     public String getColor() {
         return color;
     }
