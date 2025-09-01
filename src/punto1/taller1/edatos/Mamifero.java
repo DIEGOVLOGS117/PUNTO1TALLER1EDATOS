@@ -1,13 +1,15 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package punto1.taller1.edatos;
 
-/**
- *
- * @author DIEGOVLOGS117
- */
-public class Mamifero {
+public abstract class Mamifero extends AnimalesVertebrados {
+    
+    public Mamifero(){}
+    
+    public Mamifero (String color, int numeroDePatas) {
+        super(color,numeroDePatas);}
+    
+    
+    
+    
+    
     
 }
