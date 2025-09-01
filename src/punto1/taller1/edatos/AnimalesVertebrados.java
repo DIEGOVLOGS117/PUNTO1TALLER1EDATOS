@@ -30,15 +30,13 @@ public abstract class AnimalesVertebrados {
     
     public abstract void hacerMovimiento();
     public abstract void hacerSonido();
-    public abstract boolean test();
     
     public void verificarPatas() {
-    if (this.numeroDePatas > 0) {
+    if(this.numeroDePatas > 0) {
         System.out.println("El Animal Tiene Patas");
-    } 
-    else {
+    }else {
         System.out.println("El Animal No Tiene Patas");
-        }
+    }
 }  
     
 }
