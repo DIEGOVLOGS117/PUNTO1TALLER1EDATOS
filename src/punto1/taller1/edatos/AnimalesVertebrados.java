@@ -12,7 +12,7 @@ public abstract class AnimalesVertebrados {
         this.numeroDePatas = numeroDePatas;      
     }
     
-    /* getters y setters */
+    /* Getters y Setters */
     
     public String getColor() {
         return color;
@@ -32,6 +32,7 @@ public abstract class AnimalesVertebrados {
     
     public abstract void hacerMovimiento();
     public abstract void hacerSonido();
+    public abstract boolean tieneDientes();
     
     public void verificarPatas() {
     if(this.numeroDePatas > 0) {

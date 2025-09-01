@@ -7,7 +7,19 @@ public abstract class Ave extends AnimalesVertebrados {
     public Ave(){}
     
     public Ave(String color, String especie){
-        super(color,0);
+        super(color,4);
+        this.especie = especie;
+    }
+
+    public Ave(String especie) {
+        this.especie = especie;
+    }
+
+    public String getEspecie() {
+        return especie;
+    }
+
+    public void setEspecie(String especie) {
         this.especie = especie;
     }
     
