@@ -1,13 +1,26 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package punto1.taller1.edatos;
 
-/**
- *
- * @author DIEGOVLOGS117
- */
-public class Gato {
+public class Gato extends Mamifero {
+    
+    public Gato (){}
+    
+    public Gato (String color) {
+    super (color,4);
+    }
+    
+    @Override
+    public void hacerMovimiento(){
+        System.out.println("El Gato Camina En Cuatro Patas");
+    }
+    
+    @Override
+    public void hacerSonido(){
+        System.out.println("El Gato Hace Miauuuuuuuu");
+    }
+    
+    @Override
+    public boolean tieneDientes(){
+        return true;
+    }
     
 }
