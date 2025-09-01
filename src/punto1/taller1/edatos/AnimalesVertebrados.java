@@ -30,6 +30,7 @@ public abstract class AnimalesVertebrados {
     
     public abstract void hacerMovimiento();
     public abstract void hacerSonido();
+    public abstract boolean test();
     
     public void verificarPatas() {
     if (this.numeroDePatas > 0) {
