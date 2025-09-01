@@ -7,8 +7,8 @@ public abstract class Ave extends AnimalesVertebrados {
     public Ave(){}
     
     public Ave(String color, String especie){
-        super(color,4);
-        this.especie = especie;
+        super(color,2);
+        this.especie = especie  ;
     }
 
     public Ave(String especie) {
@@ -23,6 +23,9 @@ public abstract class Ave extends AnimalesVertebrados {
         this.especie = especie;
     }
     
-    
+    @Override
+    public boolean tieneDientes() {
+        return false;
+    }
     
 }

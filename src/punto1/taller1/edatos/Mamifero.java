@@ -5,10 +5,12 @@ public abstract class Mamifero extends AnimalesVertebrados {
     public Mamifero(){}
     
     public Mamifero (String color, int numeroDePatas) {
-        super(color,numeroDePatas);}
+    super(color,numeroDePatas);
+    }
     
-    
-    
-    
+    @Override
+    public boolean tieneDientes(){
+        return true;
+    }  
     
 }

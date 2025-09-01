@@ -42,4 +42,9 @@ public abstract class AnimalesVertebrados {
     }
 }  
     
+    @Override
+    public String toString() {
+        return "El animal es de color " + color + " y tiene " + numeroDePatas + " patas.";
+    }
+    
 }
