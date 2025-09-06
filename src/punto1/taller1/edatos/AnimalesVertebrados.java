@@ -1,8 +1,8 @@
 package punto1.taller1.edatos;
 
-public abstract class AnimalesVertebrados {
+public abstract class AnimalesVertebrados { // clase abstracta ya que no se podra instanciar 
 
-    protected String color;
+    protected String color;      // atributos privados para que mis clases hijas accedan a mis atributos 
     protected int numeroDePatas;
     
     public AnimalesVertebrados (){} // constructor vacio
@@ -13,7 +13,7 @@ public abstract class AnimalesVertebrados {
     }
     
     /* Getters y Setters */
-    
+
     public String getColor() {
         return color;
     }
@@ -22,11 +22,11 @@ public abstract class AnimalesVertebrados {
         this.color = color;
     }
 
-    public int numeroDePatas() {
+    public int getNumeroDePatas() {
         return numeroDePatas;
     }
 
-    public void numeroDePatas(int numeroDePatas) {
+    public void setNumeroDePatas(int numeroDePatas) {
         this.numeroDePatas = numeroDePatas;
     }
     

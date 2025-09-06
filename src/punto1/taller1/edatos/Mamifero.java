@@ -8,9 +8,5 @@ public abstract class Mamifero extends AnimalesVertebrados {
     super(color,numeroDePatas);
     }
     
-    @Override
-    public boolean tieneDientes(){
-        return true;
-    }  
     
 }
