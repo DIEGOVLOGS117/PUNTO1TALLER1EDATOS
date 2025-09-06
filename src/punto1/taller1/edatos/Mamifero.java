@@ -1,18 +1,23 @@
 package punto1.taller1.edatos;
 
+// Clase abstracta Mamifero que extiende AnimalesVertebrados
 public abstract class Mamifero extends AnimalesVertebrados {
     
+    // Atributos propios de mamíferos
     protected String raza;
     protected String nombre;
     
+    // Constructor vacío
     public Mamifero(){}
     
+    // Constructor que recibe color, número de patas (por defecto 4), raza y nombre
     public Mamifero (String color, int numeroDePatas, String raza, String nombre) {
-    super(color,4);
-    this.raza = raza;
-    this.nombre = nombre;
-}
+        super(color, 4); // mamíferos siempre con 4 patas
+        this.raza = raza;
+        this.nombre = nombre;
+    }
 
+    // Getters y setters
     public String getRaza() {
         return raza;
     }
@@ -29,9 +34,9 @@ public abstract class Mamifero extends AnimalesVertebrados {
         this.nombre = nombre;
     }
 
+    // toString personalizado para mamíferos
     @Override
     public String toString() {
         return "Mamifero{" + "raza=" + raza + ", nombre=" + nombre + '}';
-    }
-     
+    }  
 }

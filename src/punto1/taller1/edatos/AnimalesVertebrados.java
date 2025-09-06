@@ -1,13 +1,17 @@
 package punto1.taller1.edatos;
 
-public abstract class AnimalesVertebrados { // clase abstracta ya que no se podra instanciar 
+// Clase abstracta que representa los animales vertebrados, no se puede instanciar directamente
+public abstract class AnimalesVertebrados { 
 
-    protected String color;      // atributos privados para que mis clases hijas accedan a mis atributos 
+    // Atributos protegidos para que las clases hijas puedan acceder directamente
+    protected String color;      
     protected int numeroDePatas;
     
-    public AnimalesVertebrados (){} // constructor vacio
+    // Constructor vacío
+    public AnimalesVertebrados (){}
     
-    public AnimalesVertebrados (String color, int numeroDePatas){  // constructor cargado
+    // Constructor que recibe color y número de patas para inicializar los atributos
+    public AnimalesVertebrados (String color, int numeroDePatas){  
         this.color = color;
         this.numeroDePatas = numeroDePatas;      
     }
@@ -30,21 +34,23 @@ public abstract class AnimalesVertebrados { // clase abstracta ya que no se podr
         this.numeroDePatas = numeroDePatas;
     }
     
-    public abstract void hacerMovimiento(); /* metodos abstractos */
+    // Métodos abstractos que deben implementar las clases hijas
+    public abstract void hacerMovimiento(); 
     public abstract void hacerSonido();
     public abstract boolean tieneDientes();
     
-    public void verificarPatas() { /* Metodo validacion de verificador de patas*/
-    if(this.numeroDePatas > 0) {
-        System.out.println("El Animal Tiene Patas");
-    }else {
-        System.out.println("El Animal No Tiene Patas");
-    }
-}  
+    // Método que verifica si el animal tiene patas y lo imprime
+    public void verificarPatas() { 
+        if(this.numeroDePatas > 0) {
+            System.out.println("El Animal Tiene Patas");
+        } else {
+            System.out.println("El Animal No Tiene Patas");
+        }
+    }  
     
-    @Override  /* Override */
+    // Método toString sobrescrito para mostrar información  del animal
+    @Override
     public String toString() {
         return "El animal es de color " + color + " y tiene " + numeroDePatas + " patas.";
     }
-    
 }
