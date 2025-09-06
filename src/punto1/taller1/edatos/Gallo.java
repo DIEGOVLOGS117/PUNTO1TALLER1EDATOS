@@ -16,7 +16,7 @@ public class Gallo extends Ave{
     
     @Override
     public void hacerSonido() {
-        System.out.println("El gallo hace: ¡Kikirikí!");
+        System.out.println("El gallo hace: Kikiriki!");
     }
 
     @Override

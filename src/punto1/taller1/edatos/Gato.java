@@ -7,6 +7,11 @@ public class Gato extends Mamifero {
     public Gato (String color, String raza, String nombre) {
     super (color,4,raza,nombre);
     }
+
+    @Override
+    public String getNombre() {
+        return nombre;
+    }
     
     @Override
     public void hacerMovimiento(){
@@ -15,7 +20,7 @@ public class Gato extends Mamifero {
     
     @Override
     public void hacerSonido(){
-        System.out.println("El Gato Hace ¡Miauuuuuuuu!"); 
+        System.out.println("El Gato Hace Miauuuuuuuu!"); 
     }
     
     @Override

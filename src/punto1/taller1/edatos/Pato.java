@@ -16,7 +16,7 @@ public class Pato extends Ave {
     
     @Override
     public void hacerSonido() {
-        System.out.println("El Pato hace: ¡Cuac Cuac Cuac Cuac !");
+        System.out.println("El Pato hace: Cuac Cuac Cuac Cuac !");
     }
 
     @Override

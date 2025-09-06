@@ -14,7 +14,7 @@ public class Perro extends Mamifero {
     
     @Override
     public void hacerSonido() {
-        System.out.println("El Perro Hace ¡Guau Guau Guau Guau!");
+        System.out.println("El Perro Hace Guau Guau Guau Guau!");
     }
 
     @Override
