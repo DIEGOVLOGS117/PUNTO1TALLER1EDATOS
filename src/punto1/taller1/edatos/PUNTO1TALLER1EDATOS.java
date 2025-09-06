@@ -10,13 +10,13 @@ public class PUNTO1TALLER1EDATOS {
         System.out.println(" ------ Gato ------");
         System.out.println("Nombre: " + gatico.getNombre());
         System.out.println("Color: " + gatico.getColor());
-        gatico.hacerMovimiento();    // Muestra cómo se mueve el gato
+        gatico.hacerMovimiento();    // Muestra como se mueve el gato
         gatico.hacerSonido();        // Muestra el sonido del gato
         gatico.verificarPatas();     // Indica si tiene patas o no
         System.out.println("Tiene Dientes?: " + (gatico.tieneDientes() ? "Si" : "No"));
         
         /* Instancia del perro */
-        // Creamos un objeto Perro con color, número de patas, raza y nombre
+        // Creamos un objeto Perro con color, numero de patas, raza y nombre
         Perro perrito = new Perro("Dorado", 4, "Labrador", "Toby");
         System.out.println(" ------ Perro ------");
         System.out.println("Nombre: " + perrito.getNombre());
@@ -35,7 +35,7 @@ public class PUNTO1TALLER1EDATOS {
         gallito.hacerSonido();
         gallito.verificarPatas();
         System.out.println("Tiene Dientes?: " + (gallito.tieneDientes() ? "Si" : "No"));
-        System.out.println("¿Puede volar?: " + (gallito.ispuedeVolar() ? "Sí" : "No")); // Muestra si el gallo puede volar
+        System.out.println("Puede volar?: " + (gallito.ispuedeVolar() ? "Si" : "No")); // Muestra si el gallo puede volar
         
         /* Instancia del pato */
         // Creamos un objeto Pato con color, especie y si puede volar
@@ -46,10 +46,10 @@ public class PUNTO1TALLER1EDATOS {
         patico.hacerSonido();
         patico.verificarPatas();
         System.out.println("Tiene Dientes?: " + (patico.tieneDientes() ? "Si" : "No"));
-        System.out.println("¿Puede volar?: " + (patico.ispuedeVolar() ? "Sí" : "No")); // Muestra si el pato puede volar
+        System.out.println("Puede volar?: " + (patico.ispuedeVolar() ? "Si" : "No")); // Muestra si el pato puede volar
         
-        /* Instancia del tiburón */
-        // Creamos un objeto Tiburon que vive en el mar, con color y número de patas
+        /* Instancia del tiburon */
+        // Creamos un objeto Tiburon que vive en el mar, con color y numero de patas
         Tiburon tiburoncito = new Tiburon(true, "Gris", 0);
         System.out.println(" ------ Tiburon ------");
         System.out.println("Color: " + tiburoncito.getColor());
@@ -57,10 +57,10 @@ public class PUNTO1TALLER1EDATOS {
         tiburoncito.hacerSonido();
         tiburoncito.verificarPatas();
         System.out.println("Tiene Dientes?: " + (tiburoncito.tieneDientes() ? "Si" : "No"));
-        System.out.println("¿Vive en el mar?: " + (tiburoncito.isViveEnElMar() ? "Sí" : "No")); // Indica si vive en el mar
+        System.out.println("Vive en el mar?: " + (tiburoncito.isViveEnElMar() ? "Si" : "No")); // Indica si vive en el mar
         
         /* Instancia del bocachico */
-        // Creamos un objeto Bocachico que NO vive en el mar, con color y número de patas
+        // Creamos un objeto Bocachico que NO vive en el mar, con color y numero de patas
         Bocachico bocachicito = new Bocachico(false, "Plateado", 0);
         System.out.println(" ------ Bocachico ------");
         System.out.println("Color: " + bocachicito.getColor());
@@ -68,6 +68,6 @@ public class PUNTO1TALLER1EDATOS {
         bocachicito.hacerSonido();
         bocachicito.verificarPatas();
         System.out.println("Tiene Dientes?: " + (bocachicito.tieneDientes() ? "Si" : "No"));
-        System.out.println("¿Vive en el mar?: " + (bocachicito.isViveEnElMar() ? "Sí" : "No")); // Indica que no vive en el mar
+        System.out.println("Vive en el mar?: " + (bocachicito.isViveEnElMar() ? "Si" : "No")); // Indica que no vive en el mar
     }
 }
