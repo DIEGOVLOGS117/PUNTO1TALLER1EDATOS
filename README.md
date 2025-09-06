@@ -1,7 +1,8 @@
+PUNTO 1 TALLER 1 ESTRUCTURAS DE DATOS Y ANALISIS DE ALGORITMOS UNIVERSIDAD INDUSTRIAL DE SANTANDER CORTE 1 
+
 **SOBRE INTRODUCCIÓN A LAS ESTRUCTURAS DE DATOS**
 
-Manejo y comprensión de los principios de POO: Se quiere modelar la clase Animales vertebrados, con los descendientes Mamífero, Ave y Pez. A su vez, de la clase Mamífero descienden las clases Gato y Perro; de la clase Ave descienden las clases Gallo y Pato; y de la
-clase Pez descienden las clases Tiburón y Bocachico.
+Manejo y comprensión de los principios de POO: Se quiere modelar la clase Animales vertebrados, con los descendientes Mamífero, Ave y Pez. A su vez, de la clase Mamífero descienden las clases Gato y Perro; de la clase Ave descienden las clases Gallo y Pato; y de laclase Pez descienden las clases Tiburón y Bocachico.
  
 Todos los animales tendrán como mínimo, los atributos comunes: color y numeroDePatas, y los métodos comunes hacerMovimiento(), hacerSonido(), que describirán su forma de moverse y onomatopeya, y tienePatas() y tieneDientes(), que verificarán si el Animal 
 tiene patas y/o dientes. 
