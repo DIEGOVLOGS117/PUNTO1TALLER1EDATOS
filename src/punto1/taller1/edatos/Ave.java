@@ -2,13 +2,15 @@ package punto1.taller1.edatos;
 
 public abstract class Ave extends AnimalesVertebrados {
     
-    private String especie;
+    private String especie; /* Declaracion de atributos */
+    private boolean puedeVolar;
+             
+    public Ave(){} // constructor vacio
     
-    public Ave(){}
-    
-    public Ave(String color, String especie){
+    public Ave(String color, String especie, boolean puedeVolar){ // constructor cargado
         super(color,2);
-        this.especie = especie  ;
+        this.especie = especie;
+        this.puedeVolar = puedeVolar;
     }
 
     public Ave(String especie) {
@@ -23,9 +25,14 @@ public abstract class Ave extends AnimalesVertebrados {
         this.especie = especie;
     }
     
-    @Override
-    public boolean tieneDientes() {
-        return false;
+    public boolean ispuedeVolar(){ // metodo de poder volar o no
+        return true;
     }
     
+    @Override
+    public boolean tieneDientes() { 
+        System.out.println("Las Aves Tienen Pico");
+        return false;
+    }
+ 
 }

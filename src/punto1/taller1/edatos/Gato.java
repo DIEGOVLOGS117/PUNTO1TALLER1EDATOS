@@ -4,18 +4,18 @@ public class Gato extends Mamifero {
     
     public Gato (){}
     
-    public Gato (String color) {
-    super (color,4);
+    public Gato (String color, String raza, String nombre) {
+    super (color,4,raza,nombre);
     }
     
     @Override
     public void hacerMovimiento(){
-        System.out.println("El Gato Camina En Cuatro Patas");
+        System.out.println("El Gato Camina En Cuatro Patas, Camina Y Salta ");
     }
     
     @Override
     public void hacerSonido(){
-        System.out.println("El Gato Hace Miauuuuuuuu");
+        System.out.println("El Gato Hace ¡Miauuuuuuuu!"); 
     }
     
     @Override

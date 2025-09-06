@@ -1,13 +1,33 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package punto1.taller1.edatos;
 
-/**
- *
- * @author DIEGOVLOGS117
- */
-public class Pato {
+public class Pato extends Ave {
+
+    public Pato() {
+    }
+
+    public Pato(String color, String especie, boolean puedeVolar) {
+        super(color, "Anade Real", puedeVolar);
+    }
     
+    @Override
+    public boolean ispuedeVolar(){
+        return true;
+    }
+    
+    @Override
+    public void hacerSonido() {
+        System.out.println("El Pato hace: ¡Cuac Cuac Cuac Cuac !");
+    }
+
+    @Override
+    public void hacerMovimiento() {
+        System.out.println("El Pato Camina, Nada Y Vuela");
+    }
+    
+    @Override
+    public boolean tieneDientes() {      
+    System.out.println("El Pato Tiene Pico");    
+    return false;  
+    }
+
 }

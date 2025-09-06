@@ -14,7 +14,7 @@ public abstract class AnimalesVertebrados { // clase abstracta ya que no se podr
     
     /* Getters y Setters */
 
-    public String getColor() {
+    public String getColor() {  
         return color;
     }
 
@@ -30,11 +30,11 @@ public abstract class AnimalesVertebrados { // clase abstracta ya que no se podr
         this.numeroDePatas = numeroDePatas;
     }
     
-    public abstract void hacerMovimiento();
+    public abstract void hacerMovimiento(); /* metodos abstractos */
     public abstract void hacerSonido();
     public abstract boolean tieneDientes();
     
-    public void verificarPatas() {
+    public void verificarPatas() { /* Metodo validacion de verificador de patas*/
     if(this.numeroDePatas > 0) {
         System.out.println("El Animal Tiene Patas");
     }else {
@@ -42,7 +42,7 @@ public abstract class AnimalesVertebrados { // clase abstracta ya que no se podr
     }
 }  
     
-    @Override
+    @Override  /* Override */
     public String toString() {
         return "El animal es de color " + color + " y tiene " + numeroDePatas + " patas.";
     }

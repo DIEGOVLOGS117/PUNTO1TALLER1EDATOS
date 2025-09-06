@@ -1,13 +1,19 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package punto1.taller1.edatos;
 
-/**
- *
- * @author DIEGOVLOGS117
- */
-public class Pez {
+public abstract class Pez extends AnimalesVertebrados {
+    
+    protected boolean viveEnElMar;
+
+    public Pez() {
+    }
+
+    public Pez(boolean viveEnElMar, String color, int numeroDePatas) {
+        super(color, numeroDePatas);
+        this.viveEnElMar = viveEnElMar;
+    }
+
+    public boolean isViveEnElMar() {
+        return viveEnElMar;
+    }  
     
 }
